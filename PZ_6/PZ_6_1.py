@@ -6,15 +6,15 @@
 
 def program():
     try:
-        a_list = []
-        i = 0
-        while i < 10:
-            a_list.append(int(input('Введи значение списка: ')))
+        a_list = []  # Создаём список
+
+        for i in range(10):
+            a_list.append(int(input('Введи значение списка: ')))  # Заполняем список 10 числами
             i += 1
-        var = [x for x in a_list if x % 2 == 0]
-        var.reverse()
-        print(var)
-        print(len(var))
+        var = [x for x in a_list if x % 2 == 0]  # Поиск чётных значений списка
+        var.reverse()  # Переварачиваем список
+        print("писок чётных чисел в порядке убывания: ", var)
+        print("Кол-во чётных чисел: ", len(var))  # Выводим длину списка чётных значений
 
     except ValueError:
         print("Ошибка ввода")  # Оповещание об ошибке
