@@ -6,9 +6,9 @@
 import random  # Импортируем библиотеку random
 def program():
     try:
-        lst = [random.randint() for el in range(int(input('Введите размер списка: ')))]
+        lst = [random.randint(0, 1000) for el in range(int(input('Введите размер списка: ')))]
         # Заполняем список размера N, рандомными значениями
-        print(lst)  # Выводим созданный список на экран
+        print(f'Массив: {lst}')  # Выводим созданный список на экран
         result = 0
         count = 0
         for j in range(len(lst) - 2):
