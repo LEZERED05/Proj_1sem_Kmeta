@@ -10,7 +10,7 @@ import random
 
 def program():
     try:
-        lst = [random.randint(1, 100) for el in range(11)]  # Заполняем список 10 числами
+        lst = [random.randint(1, 100) for el in range(10)]  # Заполняем список 10 числами
         print(f'Массив: {lst}')  # Выводим созданный список на экран
         var = [x for x in lst if x % 2 == 0]  # Поиск чётных значений списка
         var.reverse()  # Переварачиваем список
