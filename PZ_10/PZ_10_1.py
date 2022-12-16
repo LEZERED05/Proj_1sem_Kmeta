@@ -29,9 +29,9 @@ milk_sugar = set()
 # поиск магазинов без сыра
 if 'сыр' not in mag:
     cheese.add('Магнит')
-elif 'сыр' not in pyt:
+if 'сыр' not in pyt:
     cheese.add('Пятерочка')
-elif 'сыр' not in per:
+if 'сыр' not in per:
     cheese.add('Перекресток')
 print('В каких магазинах нельзя приобрести сыр: ', ', '.join(cheese))
 
@@ -48,8 +48,8 @@ print('В каких магазинах можно приобрести одно
 # поиск магазинов где есть соль
 if 'соль' in mag:
     salt.add('Магнит')
-elif 'соль' in pyt:
+if 'соль' in pyt:
     salt.add('Пятерочка')
-elif 'соль' in per:
+if 'соль' in per:
     salt.add('Перекресток')
 print('В каких магазинах можно приобрести соль: ', ', '.join(salt))
